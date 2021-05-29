@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AEPDA-app';
+  public title: string = 'boilerplate-angular';
 }

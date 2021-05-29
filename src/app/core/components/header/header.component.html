@@ -1,0 +1,12 @@
+<nav>
+    <div class="header">
+        <ul class=header__list>
+            <img src="{{navBarImage.src}}" alt="{{navBarImage.alt}}"
+                class="header__list__image"
+                [routerLink]="[navBarImage.path]">
+            <li class="header__list__item" *ngFor="let item of navBar">
+                <p [routerLink]="[item.path]">{{item.name}}</p>
+            </li>
+        </ul>
+    </div>
+</nav>

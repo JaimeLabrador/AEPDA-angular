@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AEPDA-app'`, () => {
+  it(`should have as title 'boilerplate-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AEPDA-app');
+    expect(app.title).toEqual('boilerplate-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('AEPDA-app app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('boilerplate-angular app is running!');
   });
 });

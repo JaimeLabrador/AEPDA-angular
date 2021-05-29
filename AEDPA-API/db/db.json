@@ -1,0 +1,17 @@
+{
+    "home":[
+        {
+            "title":"Asociación el poder del anillo",
+            "images":[
+                ".././src/assets/header_image_40k.jpg",
+                ".././src/assets/header_image_sigmar.jpg",
+                ".././src/assets/header_image_lotr.jpg"
+            ]
+        }
+    ],
+    "league":[],
+    "tournament":[],
+    "register":[],
+    "contact":[],
+    "other":[]
+}
