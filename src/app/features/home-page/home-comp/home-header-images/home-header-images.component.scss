@@ -1,0 +1,10 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/fonts";
+
+.home-header-images{
+    background-color: $primary__color;
+    &__image{
+        width: 33.33%;
+        height: 200px;
+    }
+}

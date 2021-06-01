@@ -1,13 +1,15 @@
+@import "./colors";
+
 @font-face {
     font-family: 'titles';
-    src: url(.././assets/fonts/MedievalSharp-Regular.ttf);
+    src: url(../assets/fonts/MedievalSharp-Regular.ttf);
     font-weight: 600;
     font-size: 40px;
     color:$eigth__color
 }
 @font-face {
     font-family: 'description__text';
-    src: url(.././assets/fonts/MedievalSharp-Regular.ttf);
+    src: url(../assets/fonts/MedievalSharp-Regular.ttf);
     font-weight: 500;
     font-size: 20px;
     color: $sixth__color;

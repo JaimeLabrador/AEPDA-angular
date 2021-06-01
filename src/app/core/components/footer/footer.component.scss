@@ -1,0 +1,44 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+
+.footer{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $secondary__color ;
+    &__logo{
+        &__image{
+            width: 125px;
+        }
+    }
+    &__contact{
+        &__contents{
+            text-align: center;
+            align-items: center;
+            font-family: "nav__text";
+            color: $fifth__color;
+        }
+    }
+    &__media{
+        list-style: none;
+        padding:0;
+        display: flex;
+        &__links{
+            margin:15px;
+            font-size: 35px;
+            color: $fifth__color;
+        }
+    }
+}
+
+.copiRight{
+    height: 40px;
+    background-color: $fourth__color;
+    text-align: center;
+    p{
+        font-family: 'contact__text';
+        color:$fifth__color;
+        padding-top: 10px;
+    }
+}

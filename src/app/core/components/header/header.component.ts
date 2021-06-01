@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public navBarImage:Iimage={
-    src:'../../.././assets/logotipo_AEPDA__RECORTADO.jpg',
+    src:'../../.././assets/images/logotipo_AEPDA__RECORTADO.jpg',
     alt:'Logotipo AEPDA',
     path:''
-  }
+  };
   public navBar:Iheader[]=[
     {
       name:'Torneos',
@@ -29,12 +29,16 @@ export class HeaderComponent implements OnInit {
       name:'Registro',
       path:'register'
     },
-  ]
+  ];
+  public dropDown:boolean=true
   constructor() {
-  }
+  };
   
 
   ngOnInit(): void {
-  }
+  };
 
+  dropDownMenu(){
+    this.dropDown = !this.dropDown
+  }
 }

@@ -1,12 +1,18 @@
 <nav>
     <div class="header">
+        <img src="{{navBarImage.src}}" alt="{{navBarImage.alt}}"
+        class="header__image"
+        [routerLink]="[navBarImage.path]"
+        >
         <ul class=header__list>
-            <img src="{{navBarImage.src}}" alt="{{navBarImage.alt}}"
-                class="header__list__image"
-                [routerLink]="[navBarImage.path]">
-            <li class="header__list__item" *ngFor="let item of navBar">
+            <li 
+            class="header__list__item" 
+            *ngFor="let item of navBar"
+            [ngClass]="{'displayNone': dropDown}"
+            >
                 <p [routerLink]="[item.path]">{{item.name}}</p>
             </li>
         </ul>
+        <button (click)="dropDownMenu()">desplegable</button>
     </div>
 </nav>

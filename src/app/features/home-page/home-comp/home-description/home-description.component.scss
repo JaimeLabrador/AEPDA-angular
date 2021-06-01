@@ -1,0 +1,20 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/fonts";
+
+.description{
+    background-color: $primary__color;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title{
+        text-align: center;
+        font-family: 'titles';
+        color:$eigth__color;
+    }
+    &__content{
+        font-family: titles;
+        color:$ninth__color;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}

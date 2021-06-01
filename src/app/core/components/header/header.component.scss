@@ -1,14 +1,24 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+
 .header{
-    background-color: rgb(18, 178, 238);
-    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: $fourth__color;
+    color: $ninth__color;
+    font-family: 'nav__text';
+    &__image{
+        padding-top: 0;
+        width: 50px;
+    }
     &__list{
+        display: block;
         list-style: none;
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: space-around;
-        &__image{
-            width: 50px;
-        }
     }
+}
+
+.displayNone{
+    display: none;
 }
