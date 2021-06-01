@@ -1,9 +1,10 @@
 <div class="article">
-    <ng-container *ngFor="let article of request.articles">
+    <ng-container *ngFor="let article of request">
         <div class="article__container">
             <img class="article__container__image" src="{{article.image.src}}" alt="{{article.image.alt}}">
             <h2 class="article__container__title">{{article.title}}</h2>
             <p class="article__container__content">{{article.content}}</p>
+            <app-article-button class="article__container__button"></app-article-button>
         </div>
     </ng-container>
 </div>

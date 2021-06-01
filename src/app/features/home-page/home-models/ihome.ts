@@ -1,6 +1,6 @@
 export interface Ihome {
     title:string,
-    images:Iimage[]
+    images:Iimage[],
     articles:Iarticles[]
 }
 

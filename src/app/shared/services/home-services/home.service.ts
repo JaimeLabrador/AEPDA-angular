@@ -1,16 +1,31 @@
+import { Ihome } from 'src/app/features/home-page/home-models/ihome';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { catchError, map } from 'rxjs/operators';
+
 
 @Injectable()
 
 export class HomeService {
-  public homeEndpoint = 'http://localhost:3000/home';
+  public endpoint = 'http://localhost:3000';
   
   constructor(private http:HttpClient) {
   }
 
   public getHome() {
-    return this.http.get(this.homeEndpoint)
-  }
+    return this.http.get(`${this.endpoint}/home`).pipe(
+      map((request)=>{
+        console.log(request)
+        if (!request){
+          throw new Error ('Value expected!');
+        } else {
+           return request;
+        }
+      }),
+      catchError(error =>{
+        throw new Error ('Failed charge!')
+      })
+    );
+  };
 }
 

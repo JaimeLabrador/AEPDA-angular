@@ -10,6 +10,7 @@
     &__logo{
         &__image{
             width: 125px;
+            margin: 20px;
         }
     }
     &__contact{
@@ -27,7 +28,7 @@
         &__links{
             margin:15px;
             font-size: 35px;
-            color: $fifth__color;
+            color: $sixth__color;
         }
     }
 }

@@ -6,6 +6,8 @@
     justify-content: center;
     background-color: $primary__color;
     &__container{
+        display: flex;
+        flex-direction: column;
         background-color:$sixth__color;
         width: 250px;
         margin-left: 10px;
@@ -22,9 +24,17 @@
             font-family: 'main__titles';
         }
         &__content{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 8;
+            overflow: hidden;
             padding-left: 10px;
             padding-right: 10px;
             font-family: 'main__content';
+        }
+        &__button{
+            align-self: flex-end;
+            margin:25px
         }
     }
 }

@@ -5,17 +5,34 @@
     display: flex;
     justify-content: space-around;
     background-color: $fourth__color;
-    color: $ninth__color;
     font-family: 'nav__text';
     &__image{
+        margin: 5px;
         padding-top: 0;
         width: 50px;
     }
     &__list{
-        display: block;
+        display: inline-block;
+        position:absolute;
+        background-color: $sixth__color;
+        top:43px;
+        right:10%;
         list-style: none;
-        margin: 0;
         padding: 0;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px $seventh__color;
+        &__item{
+            padding:8px
+        }
+    }
+    &__button{
+        align-self: center;
+        font-family: 'nav__text';
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px $ninth__color;
+        height: 25px;
+        width: 50px;
     }
 }
 

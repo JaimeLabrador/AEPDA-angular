@@ -1,3 +1,4 @@
+import { ArticleButtonComponent } from './../../shared/common-components/article-button/article-button.component';
 import { HomeService } from '../../shared/services/home-services/home.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageComponent } from './home-comp/home-page.component';
@@ -13,7 +14,8 @@ import { HomeArticlesComponent } from './home-comp/home-articles/home-articles.c
   declarations: [HomePageComponent, 
     HomeHeaderImagesComponent, 
     HomeDescriptionComponent, 
-    HomeArticlesComponent
+    HomeArticlesComponent,
+    ArticleButtonComponent
   ],
   imports: [
     CommonModule,
