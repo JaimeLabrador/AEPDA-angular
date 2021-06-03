@@ -1,0 +1,29 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/fonts";
+
+.form{
+    display: flex;
+    flex-direction: column;
+    &__item{
+        border: none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+        margin-bottom: 0;
+        font-family: 'main__content';
+        color: $ninth__color;
+        p{
+            color: red;
+            font-size: 14px;
+        }
+    }
+    &__button{
+        align-self: center;
+        justify-self: center;
+        margin-top: 15px;
+        padding:5px;
+        border-radius: 5px;
+    }
+}

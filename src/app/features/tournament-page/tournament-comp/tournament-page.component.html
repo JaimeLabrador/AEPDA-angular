@@ -1,1 +1,3 @@
-<app-tournament-description [results]="response"></app-tournament-description>
+<ng-container *ngFor="let item of response">
+    <app-tournament-description [results]="item"></app-tournament-description>
+</ng-container>

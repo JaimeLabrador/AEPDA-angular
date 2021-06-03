@@ -27,4 +27,19 @@ export class TournamentService {
       })
     );
   };
+
+  public postParticipants (user:any) {
+    return this.http.post(`${this.endpoint}/tournamentParticipants`, user).pipe(
+      map((request)=>{
+        if (!request){
+          throw new Error ('Value expected!');
+        } else {
+           return request;
+        }
+      }),
+      catchError(error =>{
+        throw new Error ('Failed charge!')
+      })
+    )
+  }
 }

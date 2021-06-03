@@ -59,23 +59,45 @@
     ]
   },
   "league": [],
-  "tournament": 
+  "tournament": [
     {
-      "title":"Primer torneo AEPDA warhammer 40K",
-      "image":{
-        "src":"https://i.pinimg.com/originals/24/68/52/2468523c06c12acb5cdac7269ccad784.jpg",
-        "alt":"tournament image"
+      "title": "Primer torneo AEPDA warhammer 40K",
+      "image": {
+        "src": "https://i.pinimg.com/originals/24/68/52/2468523c06c12acb5cdac7269ccad784.jpg",
+        "alt": "tournament image"
       },
-      "rules":[
+      "rules": [
         "Se jugará con la última versión del reglamento y los codex.",
         "Las listas han de ser entregadas en formato pdf una semana antes del torneo.",
         "No se podrán usar proxis ni miniaturas de forje world.",
         "Cada jugador ha de traer su metro y dados, así como cualquier otro elemento necesario.",
         "No se tolerarán las faltas de respeto ni el juego sucio."
       ],
-      "date":"55/55/9999"
+      "date": "55/55/9999"
     },
-  "tournamentParticipants":[],
+    {
+      "title": "Primer torneo AEPDA Age of sigmar",
+      "image": {
+        "src": "https://cdnb.artstation.com/p/assets/images/images/002/319/341/medium/rafael-teruel-dracothion-guard-vs-varanguard-04-by-rafater-games-workshop-age-of-sigmar.jpg?1460228294",
+        "alt": "tournament image"
+      },
+      "rules": [
+        "Se jugará con la última versión del reglamento y los codex.",
+        "Las listas han de ser entregadas en formato pdf una semana antes del torneo.",
+        "No se podrán usar proxis ni miniaturas de forje world.",
+        "Cada jugador ha de traer su metro y dados, así como cualquier otro elemento necesario.",
+        "No se tolerarán las faltas de respeto ni el juego sucio."
+      ],
+      "date": "55/55/9999"
+    }
+  ],
+  "tournamentParticipants": [
+    {
+      "name": "Jaime",
+      "army": "drukhari",
+      "id": 1
+    }
+  ],
   "register": [
     {
       "name": "Jaime Labrador",

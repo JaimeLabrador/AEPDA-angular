@@ -1,3 +1,4 @@
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { TournamentService } from 'src/app/shared/services/tournament-services/tournament.service';
 
@@ -8,9 +9,11 @@ import { TournamentService } from 'src/app/shared/services/tournament-services/t
 })
 export class TournamentPageComponent implements OnInit {
 
-  public response: any
+  public response: any;
 
-  constructor(private tournamentService:TournamentService) { }
+
+  constructor(private tournamentService:TournamentService) {
+  }
 
   ngOnInit(): void {
     this.getTournament()
@@ -21,4 +24,6 @@ export class TournamentPageComponent implements OnInit {
       this.response=data
     })
   }
+
+
 }

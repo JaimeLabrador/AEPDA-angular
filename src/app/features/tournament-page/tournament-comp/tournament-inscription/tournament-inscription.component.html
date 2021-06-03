@@ -1,1 +1,24 @@
-<p>tournament-inscription works!</p>
+<ng-container *ngIf="signForm">
+    <div class="container">
+        <form class="form" (ngSubmit)="onSubmit()" [formGroup]="signForm">
+            <fieldset class="form__item">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" formControlName="name" />
+                <div *ngIf="!signForm.get('name')!.valid &&
+                (signForm.get('name')!.dirty || submitted)">
+                    <p>Introduce un nombre.</p>
+                </div>
+            </fieldset>
+            <fieldset class="form__item">
+                <label for="army">Ejercito:</label>
+                <input type="army" id="army" formControlName="army" />
+                <div *ngIf="!signForm.get('army')!.valid &&
+                (signForm.get('army')!.dirty || submitted)">
+                    <p>Cual es tu army?.</p>
+                </div>
+            </fieldset>
+            <button class="form__button" (click)="onSubmit()">Alistarse</button>
+        </form>
+    </div>
+</ng-container>
+

@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 import { TournamentPageComponent } from './tournament-comp/tournament-page.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -15,6 +16,7 @@ import { TournamentInscriptionComponent } from './tournament-comp/tournament-ins
     CommonModule,
     TorunamentRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers:[
     TournamentService

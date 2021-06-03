@@ -12,7 +12,6 @@ export class TournamentDescriptionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.results.rules)
   }
 
   public showRules(){

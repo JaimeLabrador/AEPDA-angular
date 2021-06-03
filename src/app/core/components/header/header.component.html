@@ -8,8 +8,7 @@
             <li 
             class="header__list__item" 
             *ngFor="let item of navBar"
-            [ngClass]="{'displayNone': dropDown}"
-            >
+            [ngClass]="{'displayNone': dropDown}">
                 <p [routerLink]="[item.path]">{{item.name}}</p>
             </li>
         </ul>
