@@ -3,6 +3,8 @@ import { FormGroup } from '@angular/forms';
 export function comparePassword (password: any, repeatPasword: any){
   
     return (formGroup: FormGroup) => {
+      console.log(formGroup);
+
       const original = formGroup.controls[password];
       const secondary = formGroup.controls[repeatPasword];
       if (secondary.errors && !secondary.errors.mustMatch) {

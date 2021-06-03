@@ -1,0 +1,44 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+
+.container{
+    background-color: $primary__color;
+    padding:25px
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    border: solid;
+    border-width: 5px;
+    border-color: $sixth__color;
+    background-color: $ninth__color;
+    box-shadow: 0px 0px 30px $sixth__color;
+    &__item{
+        border:none;
+        display:flex;
+        flex-direction: column;
+        label{
+            font-family: 'main__content';
+        }
+        div{
+            p{
+                font-family: 'main__text';
+                color: red;
+                font-size: 12px;
+            }
+        }
+    }
+    &__button{
+        justify-self: center;
+        align-self: center;
+        margin-top:10px;
+        padding: 4px;
+        border: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        border-color: $primary__color;
+        background-color: $sixth__color;
+        font-family: 'main__content';
+    }
+}

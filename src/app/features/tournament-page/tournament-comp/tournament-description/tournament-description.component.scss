@@ -1,0 +1,59 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/fonts";
+
+.container{
+    background-color: $primary__color;
+    padding:30px
+}
+
+.tournament{
+    background-color: $fifth__color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-color: $ninth__color;
+    box-shadow: 0px 0px 15px 5px $ninth__color;
+    &__title{
+        font-family: "titles";
+        color:$eigth__color;
+        text-align: center;
+        margin-top:25px;
+        margin-bottom:25px
+    }
+    &__image{
+        width: 80%;
+        border:solid;
+        border-color: $ninth__color;
+        border-radius: 5px;
+        margin-bottom:25px
+    }
+    &__rules{
+        list-style: none;
+        margin-bottom:25px;
+        li{
+            p{
+                font-family: 'main__content';
+                color: $ninth__color;
+                margin:15px
+            }
+        }
+    }
+    &__date{
+        font-family: 'main__content';
+        color: $ninth__color;
+        margin-bottom:25px;
+    }
+    &__button{
+        font-family: 'main__content';
+        background-color: $sixth__color;
+        border-radius: 8px;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+.displayNone{
+    display: none;
+}

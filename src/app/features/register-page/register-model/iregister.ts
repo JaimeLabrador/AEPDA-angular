@@ -3,8 +3,7 @@ export interface Iregister {
     password:any;
     passwordRepeat:any;
     email:string;
-    city:string;
-    postalCode:number;
-    direction:string;
     phone:number;
+    game:string;
+    army:string
 }

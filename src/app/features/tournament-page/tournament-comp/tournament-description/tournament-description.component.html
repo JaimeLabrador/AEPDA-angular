@@ -1,0 +1,15 @@
+<section>
+    <div class="container">
+        <div class="tournament">
+            <h1 class="tournament__title">{{results.title}}</h1>
+            <img class="tournament__image"src="{{results.image.src}}" alt="{{results.image.alt}}">
+            <button class="tournament__button"(click)="showRules()">Más información <span class="fas fa-arrow-circle-down"></span></button>
+            <ul [ngClass]="{'displayNone': displayRules}" class="tournament__rules">
+                <li *ngFor="let rule of results.rules">
+                    <p>{{rule}}</p>
+                </li>
+            </ul>
+            <p class="tournament__date">{{results.date}}</p>
+        </div>
+    </div>
+</section>

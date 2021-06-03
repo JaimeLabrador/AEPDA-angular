@@ -1,3 +1,4 @@
+import { RegisterServiceService } from './../../../shared/services/register-services/register-service.service';
 import { Iregister } from './../register-model/iregister';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -14,19 +15,18 @@ export class RegisterPageComponent implements OnInit {
   public submitted: boolean=false;
   public user!: Iregister
 
-  constructor(private fomrBuilder:FormBuilder) {
+  constructor(private fomrBuilder:FormBuilder, public registerService:RegisterServiceService) {
     this.registerForm = this.fomrBuilder.group({
       name:['', [Validators.required]],
       password:['',[Validators.required, Validators.minLength(8)]],
       passwordRepeat:['',[Validators.required]],
       email:['',[Validators.required, Validators.email]],
-      city:['',[Validators.required]],
-      postalCode:['',[Validators.required, Validators.maxLength(5), Validators.minLength(5)]],
-      direction:['',[Validators.required]],
-      phone:['',[Validators.required, Validators.maxLength(9), Validators.minLength(9)]]
+      phone:['',[Validators.required, Validators.maxLength(9), Validators.minLength(9)]],
+      game:['',[Validators.required]],
+      army:['',[Validators.required]]
     },
     {
-      Validator: comparePassword('password', 'passwordRepeat')
+      validator: comparePassword('password', 'passwordRepeat')
     });
   };
 
@@ -42,15 +42,15 @@ export class RegisterPageComponent implements OnInit {
         password:this.registerForm.get('password')?.value,
         passwordRepeat:this.registerForm.get('passwordRepeat')?.value,
         email:this.registerForm.get('email')?.value,
-        city:this.registerForm.get('city')?.value,
-        postalCode:this.registerForm.get('postalCode')?.value,
-        direction:this.registerForm.get('direction')?.value,
         phone:this.registerForm.get('phone')?.value,
+        game:this.registerForm.get('game')?.value,
+        army:this.registerForm.get('army')?.value
       };
-      console.log(this.user)
       this.registerForm.reset();
 	    this.submitted = false;
+      this.registerService.postUser(this.user).subscribe((data)=>{
+        console.log(data)
+      })
     }
   }
-
 }

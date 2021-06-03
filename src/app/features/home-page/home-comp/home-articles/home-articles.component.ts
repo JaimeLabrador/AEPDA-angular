@@ -1,5 +1,5 @@
+import { Ihome } from 'src/app/features/home-page/home-models/ihome';
 import { Component, Input, OnInit } from '@angular/core';
-import { Iarticles,  } from '../../home-models/ihome';
 
 @Component({
   selector: 'app-home-articles',
@@ -7,8 +7,8 @@ import { Iarticles,  } from '../../home-models/ihome';
   styleUrls: ['./home-articles.component.scss']
 })
 export class HomeArticlesComponent implements OnInit {
-  @Input() request! : Iarticles[];
-
+  @Input() request! : Ihome;
+  
   constructor() { }
 
   ngOnInit(): void {

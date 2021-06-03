@@ -1,68 +1,93 @@
 {
-    "home":[
-        {
-            "title":"Asociación el poder del anillo",
-            "images":[
-                {
-                    "src":"assets/images/header_image_40k.jpg",
-                    "alt":"warhammer 40000 image"
-                },
-                {
-                    "src":"assets/images/header_image_sigmar.jpg",
-                    "alt":"lord of the rings image"
-                },
-                {
-                    "src":"assets/images/header_image_LOTR.jpg",
-                    "alt":"age of sigmar image"
-                }
-            ],
-            "articles":[
-                {
-                    "image":{
-                        "src":"https://4.bp.blogspot.com/-4il8-1L-xOQ/V3OIujoMLFI/AAAAAAAAUOc/ma93FygeDrUZeteXJhEZ7TLKMPtie2nHQCLcB/s1600/IMG_0251.jpg",
-                        "alt":"local"
-                    },
-                    "title":"Nuestro local",
-                    "content":"Disponemos de un amplio local con 14 mesas de juego, cada una con su tapete y escenografia propias para que cada batalla sea diferente. Los socios disponen de espacio para dejar sus miniaturas, además de una zona donde montar y pintar tu ejercito y un par de sofás para relajarte despues de la batalla."
-                },
-                {
-                    "image":{
-                        "src":"https://kit.promo/wp-content/uploads/2019/02/miniatura-fondo.jpg",
-                        "alt":"pintura"
-                    },
-                    "title":"A pintar",
-                    "content":"Un ejercito no está completo hasta que no está pintado, ya basta de tener tus miniaturas de color gris. En nuestra asociación disponemos de una zona de pintura, además entre nuestras filas hay excelentes pintores, que seguro que estarán encantados de compartir sus técnicas y conocimientos contigo, puedes ver alguno de los mejores trabajos de nuestros socios aquí."
-                },
-                {
-                    "image":{
-                        "src":"https://www.fanhammer.org/wp-content/uploads/2012/05/partida.jpg",
-                        "alt":"partida"
-                    },
-                    "title":"A jugar!",
-                    "content":"Desde luego no todo va a ser pintar miniaturas, los ejercitos han de ver el campo de batalla y en este club eso pasa continuamente, los socios son muy activos y siempre vas a tener rivales con los que medirte y de los que aprender. Aunque los protagonistas son warhammer 40k y age of sigmar, tambié hay socios que juegas a LOTR y a infinity así como a juegos de mesa y otros wargames."
-                },
-                {
-                    "image":{
-                        "src":"https://cargad.com/wp-content/uploads/2019/12/IMG-20191208-WA0030-1024x461.jpg",
-                        "alt":"torneos"
-                    },
-                    "title":"Torneos",
-                    "content":"Llegó la hora, después de enfrentarte a varios rivales y desarrollar tu estrategia es el momento de participar en uno de nuestros torneos. Desde la asociación se crean bastantes torneos tanto internos como habiertos. Que mejor manera de pasar un día que rodeado de gente que comparte tu afición y además derrotar a tus rivales en el campo de batalla."
-                },
-                {
-                    "image":{
-                        "src":"https://pinceldorado.com/content/images/wordpress/2019/01/tienda-de-pinturas.jpg",
-                        "alt":"kafrelot"
-                    },
-                    "title":"Kafrelot",
-                    "content":"Necesitas refuerzos para tu army? No te preocupes, tenemos la solución, Kafrelot es una tienda de wargames situada justo al lado del club y asociada con nosotros, por lo que todos los socios disfrutan de un 20% de descuento en la mayoría de productos de games workshop, aunque también se hacen pedidos de otras marcas, tú eliges."
-                }
-            ]
-        }
+  "home": {
+    "title": "Asociación el poder del anillo",
+    "images": [
+      {
+        "src": "assets/images/header_image_40k.jpg",
+        "alt": "warhammer 40000 image"
+      },
+      {
+        "src": "assets/images/header_image_sigmar.jpg",
+        "alt": "lord of the rings image"
+      },
+      {
+        "src": "assets/images/header_image_LOTR.jpg",
+        "alt": "age of sigmar image"
+      }
     ],
-    "league":[],
-    "tournament":[],
-    "register":[],
-    "contact":[],
-    "other":[]
+    "articles": [
+      {
+        "image": {
+          "src": "https://4.bp.blogspot.com/-4il8-1L-xOQ/V3OIujoMLFI/AAAAAAAAUOc/ma93FygeDrUZeteXJhEZ7TLKMPtie2nHQCLcB/s1600/IMG_0251.jpg",
+          "alt": "local"
+        },
+        "title": "Nuestro local",
+        "content": "Disponemos de un amplio local con 14 mesas de juego, cada una con su tapete y escenografia propias para que cada batalla sea diferente. Los socios disponen de espacio para dejar sus miniaturas, además de una zona donde montar y pintar tu ejercito y un par de sofás para relajarte despues de la batalla."
+      },
+      {
+        "image": {
+          "src": "https://kit.promo/wp-content/uploads/2019/02/miniatura-fondo.jpg",
+          "alt": "pintura"
+        },
+        "title": "A pintar",
+        "content": "Un ejercito no está completo hasta que no está pintado, ya basta de tener tus miniaturas de color gris. En nuestra asociación disponemos de una zona de pintura, además entre nuestras filas hay excelentes pintores, que seguro que estarán encantados de compartir sus técnicas y conocimientos contigo, puedes ver alguno de los mejores trabajos de nuestros socios aquí."
+      },
+      {
+        "image": {
+          "src": "https://www.fanhammer.org/wp-content/uploads/2012/05/partida.jpg",
+          "alt": "partida"
+        },
+        "title": "A jugar!",
+        "content": "Desde luego no todo va a ser pintar miniaturas, los ejercitos han de ver el campo de batalla y en este club eso pasa continuamente, los socios son muy activos y siempre vas a tener rivales con los que medirte y de los que aprender. Aunque los protagonistas son warhammer 40k y age of sigmar, tambié hay socios que juegas a LOTR y a infinity así como a juegos de mesa y otros wargames."
+      },
+      {
+        "image": {
+          "src": "https://cargad.com/wp-content/uploads/2019/12/IMG-20191208-WA0030-1024x461.jpg",
+          "alt": "torneos"
+        },
+        "title": "Torneos",
+        "content": "Llegó la hora, después de enfrentarte a varios rivales y desarrollar tu estrategia es el momento de participar en uno de nuestros torneos. Desde la asociación se crean bastantes torneos tanto internos como habiertos. Que mejor manera de pasar un día que rodeado de gente que comparte tu afición y además derrotar a tus rivales en el campo de batalla."
+      },
+      {
+        "image": {
+          "src": "https://pinceldorado.com/content/images/wordpress/2019/01/tienda-de-pinturas.jpg",
+          "alt": "kafrelot"
+        },
+        "title": "Kafrelot",
+        "content": "Necesitas refuerzos para tu army? No te preocupes, tenemos la solución, Kafrelot es una tienda de wargames situada justo al lado del club y asociada con nosotros, por lo que todos los socios disfrutan de un 20% de descuento en la mayoría de productos de games workshop, aunque también se hacen pedidos de otras marcas, tú eliges."
+      }
+    ]
+  },
+  "league": [],
+  "tournament": 
+    {
+      "title":"Primer torneo AEPDA warhammer 40K",
+      "image":{
+        "src":"https://i.pinimg.com/originals/24/68/52/2468523c06c12acb5cdac7269ccad784.jpg",
+        "alt":"tournament image"
+      },
+      "rules":[
+        "Se jugará con la última versión del reglamento y los codex.",
+        "Las listas han de ser entregadas en formato pdf una semana antes del torneo.",
+        "No se podrán usar proxis ni miniaturas de forje world.",
+        "Cada jugador ha de traer su metro y dados, así como cualquier otro elemento necesario.",
+        "No se tolerarán las faltas de respeto ni el juego sucio."
+      ],
+      "date":"55/55/9999"
+    },
+  "tournamentParticipants":[],
+  "register": [
+    {
+      "name": "Jaime Labrador",
+      "password": "123pepe88",
+      "passwordRepeat": "123pepe88",
+      "email": "jaime.labrador90varios@gmail.com",
+      "phone": "654654654",
+      "game": "Warhammer 40k",
+      "army": "Orkos",
+      "id": 1
+    }
+  ],
+  "contact": [],
+  "other": []
 }

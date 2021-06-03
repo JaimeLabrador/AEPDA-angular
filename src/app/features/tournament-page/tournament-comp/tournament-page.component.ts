@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TournamentService } from 'src/app/shared/services/tournament-services/tournament.service';
 
 @Component({
   selector: 'app-tournament-page',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TournamentPageComponent implements OnInit {
 
-  constructor() { }
+  public response: any
+
+  constructor(private tournamentService:TournamentService) { }
 
   ngOnInit(): void {
+    this.getTournament()
   }
 
+  public getTournament(){
+    this.tournamentService.getTournament().subscribe((data)=>{
+      this.response=data
+    })
+  }
 }
