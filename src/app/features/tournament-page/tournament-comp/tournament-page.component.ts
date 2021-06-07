@@ -10,7 +10,7 @@ import { TournamentService } from 'src/app/shared/services/tournament-services/t
 export class TournamentPageComponent implements OnInit {
 
   public response: any;
-
+  public loader :boolean = false;
 
   constructor(private tournamentService:TournamentService) {
   }
@@ -20,10 +20,11 @@ export class TournamentPageComponent implements OnInit {
   }
 
   public getTournament(){
+    this.loader=true;
+
     this.tournamentService.getTournament().subscribe((data)=>{
-      this.response=data
+      this.response=data;
+      this.loader=false;
     })
   }
-
-
 }

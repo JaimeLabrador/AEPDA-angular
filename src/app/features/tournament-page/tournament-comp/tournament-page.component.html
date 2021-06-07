@@ -1,3 +1,7 @@
+<app-tournament-rules></app-tournament-rules>
 <ng-container *ngFor="let item of response">
     <app-tournament-description [results]="item"></app-tournament-description>
 </ng-container>
+<div *ngIf="loader" class="loader">
+    <img src="https://media.giphy.com/media/3y0oCOkdKKRi0/giphy.gif" alt="loader">
+</div>

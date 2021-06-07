@@ -29,17 +29,6 @@
         border-radius: 5px;
         margin-bottom:25px
     }
-    &__rules{
-        list-style: none;
-        margin-bottom:25px;
-        li{
-            p{
-                font-family: 'main__content';
-                color: $ninth__color;
-                margin:15px
-            }
-        }
-    }
     &__date{
         font-family: 'main__content';
         color: $ninth__color;
@@ -51,6 +40,14 @@
         border-radius: 8px;
         padding: 5px;
         margin-bottom: 15px;
+    }
+    &__participants{
+        h2{
+            margin-top: 20px;
+            font-family: "titles";
+            color:$eigth__color;
+            text-align: center;
+        }
     }
 }
 

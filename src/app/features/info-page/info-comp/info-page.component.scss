@@ -1,0 +1,43 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+
+.information{
+    padding:30px;
+    background-color: $primary__color;
+}
+.container{
+    background-color: $fifth__color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid;
+    border-color: $ninth__color;
+    box-shadow: 0px 0px 15px 5px $ninth__color;
+    margin-bottom: 50px;
+    &__title{
+        margin:10px;
+        font-family: "titles";
+        color:$eigth__color;
+        text-align: center;
+    }
+    &__content{
+        font-family: 'main__content';
+        color: $ninth__color;
+        padding: 10px;
+    }
+    &__item{
+        font-family: 'main__content';
+        color: $ninth__color;
+        text-align: center;
+        padding: 10px;
+    }
+    &__list{
+        list-style: none;
+        font-family: 'main__content';
+        color: $ninth__color;
+        text-align: center;
+        padding: 10px;
+    }
+}

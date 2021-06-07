@@ -1,0 +1,19 @@
+@import "../../../../../../styles/colors";
+@import "../../../../../../styles/fonts";
+
+.participants{
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin:15px;
+    border-style: solid;
+    border-color: $primary__color;
+    &__item{
+        font-family: 'main__content';
+        color: $ninth__color;
+        padding:10px;
+        text-align: center;
+    }
+}

@@ -1,4 +1,4 @@
-<div class="article">
+<div *ngIf="request" class="article">
     <ng-container *ngFor="let article of request.articles">
         <div class="article__container">
             <img class="article__container__image" src="{{article.image.src}}" alt="{{article.image.alt}}">

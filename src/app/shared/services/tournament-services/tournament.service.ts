@@ -18,7 +18,6 @@ export class TournamentService {
         if (!request){
           throw new Error ('Value expected!');
         } else {
-          console.log(request)
            return request;
         }
       }),
@@ -35,6 +34,21 @@ export class TournamentService {
           throw new Error ('Value expected!');
         } else {
            return request;
+        }
+      }),
+      catchError(error =>{
+        throw new Error ('Failed charge!')
+      })
+    )
+  }
+
+  public getParticipants () {
+    return this.http.get(`${this.endpoint}/tournamentParticipants`).pipe(
+      map((participantRequest)=>{
+        if (!participantRequest){
+          throw new Error ('Value expected!');
+        } else {
+           return participantRequest;
         }
       }),
       catchError(error =>{

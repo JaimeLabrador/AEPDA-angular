@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
 
   public response: any
+  public loader :boolean = false;
 
   constructor(private homeService:HomeService) { }
 
@@ -17,8 +18,11 @@ export class HomePageComponent implements OnInit {
   }
 
   public getHome() {
+    this.loader=true;
+  
     this.homeService.getHome().subscribe((data)=>{
-      this.response=data
+      this.response=data;
+      this.loader=false;
     })
   }
 }

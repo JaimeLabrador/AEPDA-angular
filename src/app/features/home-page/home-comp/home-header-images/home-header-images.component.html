@@ -1,4 +1,4 @@
-<div class="home-header-images">
+<div *ngIf="request" class="home-header-images">
     <ng-container *ngFor="let image of request.images">
         <img class="home-header-images__image" src="{{image.src}}" alt="{{image.alt}}">
     </ng-container>
