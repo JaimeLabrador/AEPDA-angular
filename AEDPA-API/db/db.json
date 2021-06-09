@@ -58,7 +58,63 @@
       }
     ]
   },
-  "league": [],
+  "paints": [
+    {
+      "src": "http://pintureando.com/wp-content/uploads/2020/02/como-pintar-caras-warhammer-1024x860.jpg",
+      "alt": "miniatura pintada",
+      "id": 1
+    },
+    {
+      "src": "https://i.pinimg.com/originals/4f/4a/70/4f4a70254e81de62097371bba4eb5724.jpg",
+      "alt": "miniatura pintada",
+      "id": 2
+    },
+    {
+      "src": "https://i.pinimg.com/originals/3c/3f/32/3c3f320448c07eb02faa75c2923c2998.jpg",
+      "alt": "miniatura pintada",
+      "id": 3
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/proxy/5jEUMMDLjF27Obvyqh9H4D1X1_w28NhXOmLPMeG5niNyxNVt5QAhPXl_WFbtiflG5EIkrsQsDJSKBCsjrXPDUjtLX_1JAi5Ec7xo_iafKt4Uv9fs_pw0XH17wS2z04zjrQ",
+      "alt": "miniatura pintada",
+      "id": 4
+    },
+    {
+      "src": "https://www.paintingforglory.com/wp-content/uploads/2018/11/Mortarion-pr%C3%ADncipe-demonio-de-Nurgle-de-Games-Workshop2-333x360.jpg",
+      "alt": "miniatura pintada",
+      "id": 5
+    },
+    {
+      "src": "https://pbs.twimg.com/media/D5tGo5oX4AIJfr9.jpg",
+      "alt": "miniatura pintada",
+      "id": 6
+    },
+    {
+      "src": "https://cdn.wallapop.com/images/10420/9a/zi/__/c10420p562649032/i1693701727.jpg?pictureSize=W320",
+      "alt": "miniatura pintada",
+      "id": 7
+    },
+    {
+      "src": "https://www.fauxhammer.com/wp-content/uploads/2016/10/Painting-Stormcast-Eternals-Featured-678x381.jpg",
+      "alt": "miniatura pintada",
+      "id": 8
+    },
+    {
+      "src": "https://i.ebayimg.com/thumbs/images/g/7TEAAOSw8U5gQlL0/s-l300.jpg",
+      "alt": "miniatura pintada",
+      "id": 9
+    },
+    {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFID08BhRra36zBRTS_4-MD0yJmBOXl6dMuA&usqp=CAU",
+      "alt": "miniatura pintada",
+      "id": 10
+    },
+    {
+      "src": "https://www.compra-venta.es/sh-img/054bc98d15b6a10d7a3d664a2c754602_warhammer%2Bpintados.jpg",
+      "alt": "Jaime",
+      "id": 11
+    }
+  ],
   "tournament": [
     {
       "title": "Primer torneo AEPDA warhammer 40K",
@@ -102,6 +158,16 @@
       "name": "Jlt_90",
       "army": "nfdsfds",
       "id": 5
+    },
+    {
+      "name": "jorge",
+      "army": "arelecos",
+      "id": 6
+    },
+    {
+      "name": "Jaime",
+      "army": "adadsasds",
+      "id": 7
     }
   ],
   "register": [
@@ -115,7 +181,5 @@
       "army": "Orkos",
       "id": 1
     }
-  ],
-  "contact": [],
-  "other": []
+  ]
 }

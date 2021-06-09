@@ -26,7 +26,7 @@ export class TournamentDescriptionComponent implements OnInit {
     this.tournamentService.getParticipants().subscribe((data) => {
       this.response = data;
       this.loader = false;
-    })
+    });
   }
 
   public showParticipants(): void{

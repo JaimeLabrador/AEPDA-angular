@@ -11,9 +11,10 @@ import { HomeArticlesComponent } from './home-comp/home-articles/home-articles.c
 
 
 @NgModule({
-  declarations: [HomePageComponent, 
-    HomeHeaderImagesComponent, 
-    HomeDescriptionComponent, 
+  declarations: [
+    HomePageComponent,
+    HomeHeaderImagesComponent,
+    HomeDescriptionComponent,
     HomeArticlesComponent,
     ArticleButtonComponent
   ],

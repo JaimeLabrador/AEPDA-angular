@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeaguePageComponent } from './league-page.component';
+import { PaintComponent } from './paint.component';
 
-describe('LeaguePageComponent', () => {
-  let component: LeaguePageComponent;
-  let fixture: ComponentFixture<LeaguePageComponent>;
+describe('PaintComponent', () => {
+  let component: PaintComponent;
+  let fixture: ComponentFixture<PaintComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LeaguePageComponent ]
+      declarations: [ PaintComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LeaguePageComponent);
+    fixture = TestBed.createComponent(PaintComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

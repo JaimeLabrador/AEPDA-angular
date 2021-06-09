@@ -8,21 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  public response: any
-  public loader :boolean = false;
+  public response: any;
+  public loader = false;
 
-  constructor(private homeService:HomeService) { }
+  constructor(private homeService: HomeService) { }
 
   ngOnInit(): void {
-    this.getHome()
+    this.getHome();
   }
 
-  public getHome() {
-    this.loader=true;
-  
-    this.homeService.getHome().subscribe((data)=>{
-      this.response=data;
-      this.loader=false;
-    })
+  public getHome(): void {
+    this.loader = true;
+
+    this.homeService.getHome().subscribe((data) => {
+      this.response = data;
+      this.loader = false;
+    });
   }
 }

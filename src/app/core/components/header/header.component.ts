@@ -7,38 +7,37 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public navBarImage:Iimage={
-    src:'../../.././assets/images/logotipo_AEPDA__RECORTADO.jpg',
-    alt:'Logotipo AEPDA',
-    path:''
+  public navBarImage: Iimage = {
+    src: '../../.././assets/images/logotipo_AEPDA__RECORTADO.jpg',
+    alt: 'Logotipo AEPDA',
+    path: ''
   };
-  public navBar:Iheader[]=[
+  public navBar: Iheader[] = [
     {
-      name:'Torneos',
-      path:'tournament'
+      name: 'Torneos',
+      path: 'tournament'
     },
     {
-      name:'Ligas',
-      path:'league'
+      name: 'Galería',
+      path: 'paint'
     },
     {
-      name:'Información',
-      path:'info'
+      name: 'Información',
+      path: 'info'
     },
     {
-      name:'Registro',
-      path:'register'
+      name: 'Registro',
+      path: 'register'
     },
   ];
-  public dropDown:boolean=true
+  public dropDown = true;
   constructor() {
-  };
-  
+  }
 
   ngOnInit(): void {
-  };
+  }
 
-  dropDownMenu(){
-    this.dropDown = !this.dropDown
+  dropDownMenu(): void{
+    this.dropDown = !this.dropDown;
   }
 }

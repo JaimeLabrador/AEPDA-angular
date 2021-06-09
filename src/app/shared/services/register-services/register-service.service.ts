@@ -9,12 +9,12 @@ import { catchError, map } from 'rxjs/operators';
 export class RegisterServiceService {
   public endpoint = 'http://localhost:3000';
 
-  constructor(private http:HttpClient) { 
+  constructor(private http: HttpClient) { 
   }
 
-  public postUser(user:Iregister) {
+  public postUser(user: Iregister) {
     return this.http.post(`${this.endpoint}/register`, user).pipe(
-      map((request)=>{
+      map((request) => {
         if (!request){
           throw new Error ('Value expected!');
         } else {
@@ -25,5 +25,5 @@ export class RegisterServiceService {
         throw new Error ('Failed charge!')
       })
     );
-  };
+  }
 }

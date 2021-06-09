@@ -1,0 +1,29 @@
+<div class="description">
+    <h1 class="description__title">Galería</h1>
+    <p class="description__text">lorem ipsum....</p>
+</div>
+<div class="galeri">
+    <ng-container *ngFor="let image of response">
+        <img class="galeri__image" src="{{image.src}}" alt="{{image.alt}}">
+        <p>Pintor:"{{image.alt}}"</p>
+    </ng-container>
+    <form class="galeri__form" (ngSubmit)="submitImage()" [formGroup]="postForm">
+        <fieldset class="galeri__form__item">
+            <label for="alt">Nombre:</label>
+            <input type="text" id="alt" formControlName="alt" />
+            <div *ngIf="!postForm.get('alt')!.valid &&
+            (postForm.get('alt')!.dirty || submitted)">
+                <p>Introduce tu nombre.</p>
+            </div>
+        </fieldset>
+        <fieldset class="galeri__form__item">
+            <label for="src">URL:</label>
+            <input type="text" id="src" formControlName="src" />
+            <div *ngIf="!postForm.get('src')!.valid &&
+            (postForm.get('src')!.dirty || submitted)">
+                <p>Introduce una url válida.</p>
+            </div>
+        </fieldset>
+    <button class="galeri__form__button" (click)="submitImage()">+</button>
+    </form>
+</div>

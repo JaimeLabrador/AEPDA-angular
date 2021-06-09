@@ -9,12 +9,12 @@ import { catchError, map } from 'rxjs/operators';
 export class TournamentService {
   public endpoint = 'http://localhost:3000';
 
-  constructor(private http:HttpClient) { 
+  constructor(private http: HttpClient) { 
   }
 
-  public getTournament () {
+  public getTournament() {
     return this.http.get(`${this.endpoint}/tournament`).pipe(
-      map((request)=>{
+      map((request) => {
         if (!request){
           throw new Error ('Value expected!');
         } else {
@@ -22,14 +22,14 @@ export class TournamentService {
         }
       }),
       catchError(error =>{
-        throw new Error ('Failed charge!')
+        throw new Error ('Failed charge!');
       })
     );
-  };
+  }
 
   public postParticipants (user:any) {
     return this.http.post(`${this.endpoint}/tournamentParticipants`, user).pipe(
-      map((request)=>{
+      map((request) => {
         if (!request){
           throw new Error ('Value expected!');
         } else {
@@ -52,7 +52,7 @@ export class TournamentService {
         }
       }),
       catchError(error =>{
-        throw new Error ('Failed charge!')
+        throw new Error ('Failed charge!');
       })
     )
   }

@@ -1,10 +1,9 @@
 export interface Iheader {
-    name:string,
-    path:string
+    name: string;
+    path: string;
 }
-
 export interface Iimage {
-    src:string,
-    alt:string,
-    path:string
+    src: string;
+    alt: string;
+    path: string;
 }

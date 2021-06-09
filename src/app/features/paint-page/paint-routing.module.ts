@@ -1,11 +1,12 @@
+import { PaintComponent } from './paint/paint.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LeaguePageComponent } from './league-comp/league-page.component';
+
 
 const routes: Routes = [
   {
-    path:'',
-    component:LeaguePageComponent
+    path: '',
+    component: PaintComponent
   }
 ];
 
@@ -13,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LeagueRoutingModule { }
+export class PaintRoutingModule { }
