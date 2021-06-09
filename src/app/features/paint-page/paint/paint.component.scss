@@ -1,8 +1,74 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+
+.description{
+    background-color: $primary__color;
+    &__title{
+        font-family: "titles";
+        color:$eigth__color;
+        text-align: center;
+        padding-top: 15px;
+    }
+    &__text{
+        text-align: center;
+        font-family: 'main__content';
+        color: $ninth__color;
+    }
+}
 .galeri{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    &__image{
-        width: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary__color;
+    &__container{
+        border: solid;
+        border-color: $ninth__color;
+        box-shadow: 0px 0px 15px 5px $ninth__color;
+        margin: 25px;
+        padding: 10px;
+        &__painter{
+            text-align: center;
+            font-family: 'main__content';
+            color: $ninth__color;
+        }
+        &__image{
+            width: 210px;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'main__content';
+            color: $ninth__color;
+            border: none;
+            div{
+                p{
+                    font-size: 12px;
+                    color: red;
+                    font-family: 'main__content';
+                }
+            }
+        }
+    }
+}
+
+.container{
+    background-color: $primary__color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__button{
+        margin: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        font-size: 30px;
     }
 }

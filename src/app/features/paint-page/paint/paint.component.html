@@ -4,8 +4,10 @@
 </div>
 <div class="galeri">
     <ng-container *ngFor="let image of response">
-        <img class="galeri__image" src="{{image.src}}" alt="{{image.alt}}">
-        <p>Pintor:"{{image.alt}}"</p>
+        <div class="galeri__container">
+            <img class="galeri__container__image" src="{{image.src}}" alt="{{image.alt}}">
+            <p class="galeri__container__painter"> Pintor:"{{image.alt}}"</p>
+        </div>
     </ng-container>
     <form class="galeri__form" (ngSubmit)="submitImage()" [formGroup]="postForm">
         <fieldset class="galeri__form__item">
@@ -24,6 +26,8 @@
                 <p>Introduce una url válida.</p>
             </div>
         </fieldset>
-    <button class="galeri__form__button" (click)="submitImage()">+</button>
     </form>
+</div>
+<div class="container">
+    <button class="container__button" (click)="submitImage()">+</button>
 </div>
