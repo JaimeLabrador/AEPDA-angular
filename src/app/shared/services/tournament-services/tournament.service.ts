@@ -21,13 +21,13 @@ export class TournamentService {
            return request;
         }
       }),
-      catchError(error =>{
+      catchError(error => {
         throw new Error ('Failed charge!');
       })
     );
   }
 
-  public postParticipants (user:any) {
+  public postParticipants (user: any) {
     return this.http.post(`${this.endpoint}/tournamentParticipants`, user).pipe(
       map((request) => {
         if (!request){
@@ -36,24 +36,24 @@ export class TournamentService {
            return request;
         }
       }),
-      catchError(error =>{
+      catchError(error => {
         throw new Error ('Failed charge!')
       })
-    )
+    );
   }
 
   public getParticipants () {
     return this.http.get(`${this.endpoint}/tournamentParticipants`).pipe(
-      map((participantRequest)=>{
+      map((participantRequest) => {
         if (!participantRequest){
           throw new Error ('Value expected!');
         } else {
            return participantRequest;
         }
       }),
-      catchError(error =>{
+      catchError(error => {
         throw new Error ('Failed charge!');
       })
-    )
+    );
   }
 }

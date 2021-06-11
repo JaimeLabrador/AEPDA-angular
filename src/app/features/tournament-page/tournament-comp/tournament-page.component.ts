@@ -10,21 +10,21 @@ import { TournamentService } from 'src/app/shared/services/tournament-services/t
 export class TournamentPageComponent implements OnInit {
 
   public response: any;
-  public loader :boolean = false;
+  public loader  = false;
 
-  constructor(private tournamentService:TournamentService) {
+  constructor(private tournamentService: TournamentService) {
   }
 
   ngOnInit(): void {
-    this.getTournament()
+    this.getTournament();
   }
 
-  public getTournament(){
-    this.loader=true;
+  public getTournament(): void{
+    this.loader = true;
 
-    this.tournamentService.getTournament().subscribe((data)=>{
-      this.response=data;
-      this.loader=false;
-    })
+    this.tournamentService.getTournament().subscribe((data) => {
+      this.response = data;
+      this.loader = false;
+    });
   }
 }

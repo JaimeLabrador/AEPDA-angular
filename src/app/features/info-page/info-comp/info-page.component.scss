@@ -1,5 +1,6 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/fonts";
+@import "../../../../styles/responsive";
 
 .information{
     padding:30px;
@@ -39,5 +40,18 @@
         color: $ninth__color;
         text-align: center;
         padding: 10px;
+    }
+}
+
+@include tablet {
+    .container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@include desktop {
+    .container{
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }

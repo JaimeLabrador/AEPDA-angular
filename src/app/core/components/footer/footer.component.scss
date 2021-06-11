@@ -1,5 +1,6 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/fonts";
+@import "../../../../styles/responsive";
 
 .footer{
     display: flex;
@@ -41,5 +42,11 @@
         font-family: 'contact__text';
         color:$fifth__color;
         padding-top: 10px;
+    }
+}
+
+@include tablet {
+    .footer{
+        flex-direction: row;
     }
 }

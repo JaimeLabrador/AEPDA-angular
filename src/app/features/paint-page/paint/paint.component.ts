@@ -13,6 +13,7 @@ export class PaintComponent implements OnInit {
   public submitted = false;
   public image!: any;
   public postForm: FormGroup;
+  public loader = false;
 
   constructor( private paintService: PaintService, public formBuilder: FormBuilder) {
     this.postForm = this.formBuilder.group({
@@ -25,12 +26,15 @@ export class PaintComponent implements OnInit {
     this.getPaint();
   }
   public getPaint(): void {
+    this.loader = true;
 
     this.paintService.getPaint().subscribe((data) => {
       this.response = data;
+      this.loader = false;
+
     });
   }
-  public submitImage() {
+  public submitImage(): void {
     this.submitted = true;
 
     if (this.postForm.valid) {

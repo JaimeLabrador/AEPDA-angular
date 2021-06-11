@@ -21,7 +21,7 @@ export class RegisterServiceService {
            return request;
         }
       }),
-      catchError(error =>{
+      catchError(error => {
         throw new Error ('Failed charge!')
       })
     );

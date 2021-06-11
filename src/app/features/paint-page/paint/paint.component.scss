@@ -1,5 +1,6 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/fonts";
+@import "../../../../styles/responsive";
 
 .description{
     background-color: $primary__color;
@@ -37,6 +38,7 @@
         }
     }
     &__form{
+        background-color: $primary__color;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -70,5 +72,24 @@
         width: 40px;
         border-radius: 50%;
         font-size: 30px;
+    }
+}
+
+.loader{
+    z-index: 1;
+    background-color: rgba(92, 91, 91, 0.157);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@include desktop{
+    .galeri{
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }

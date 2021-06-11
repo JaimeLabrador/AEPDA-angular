@@ -7,8 +7,8 @@ import { Ihome, } from '../../home-models/ihome';
   styleUrls: ['./home-header-images.component.scss']
 })
 export class HomeHeaderImagesComponent implements OnInit {
-  @Input() request! : Ihome;
-  
+  @Input() request!: Ihome;
+
   constructor() {
   }
 

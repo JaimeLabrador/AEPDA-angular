@@ -2,6 +2,9 @@
     <h1 class="description__title">Galería</h1>
     <p class="description__text">lorem ipsum....</p>
 </div>
+<div *ngIf="loader" class="loader">
+    <img src="https://media.giphy.com/media/3y0oCOkdKKRi0/giphy.gif" alt="loader">
+</div>
 <div class="galeri">
     <ng-container *ngFor="let image of response">
         <div class="galeri__container">
@@ -9,6 +12,7 @@
             <p class="galeri__container__painter"> Pintor:"{{image.alt}}"</p>
         </div>
     </ng-container>
+</div>
     <form class="galeri__form" (ngSubmit)="submitImage()" [formGroup]="postForm">
         <fieldset class="galeri__form__item">
             <label for="alt">Nombre:</label>
@@ -27,7 +31,7 @@
             </div>
         </fieldset>
     </form>
-</div>
 <div class="container">
     <button class="container__button" (click)="submitImage()">+</button>
 </div>
+

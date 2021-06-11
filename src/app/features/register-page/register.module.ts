@@ -1,9 +1,10 @@
-import { RegisterPageComponent } from './register-comp/register-page.component';
+// modules //
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { RegisterRoutingModule } from './register-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+// components //
+import { RegisterPageComponent } from './register-comp/register-page.component';
 
 
 @NgModule({

@@ -1,9 +1,11 @@
 @import "../../../../../styles/colors";
 @import "../../../../../styles/fonts";
+@import "../../../../../styles/responsive";
+
 .article{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: $primary__color;
     &__container{
         display: flex;
@@ -36,5 +38,12 @@
             align-self: flex-end;
             margin:25px
         }
+    }
+}
+
+@include tablet {
+    .article{
+        padding-left: 8%;
+        padding-right: 8%;
     }
 }
